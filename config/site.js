@@ -25,7 +25,7 @@ module.exports = {
   baseFontSize: "16px",
 
   // Your information
-  avatar: "../content/projects/headshot.jpg",
+  avatar: "/content/projects/headshot.jpg",
   name: "LekoArts",
   location: "Germany",
   socialMedia: [

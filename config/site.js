@@ -5,7 +5,7 @@ module.exports = {
   siteTitleAlt: "Alex McEvoy - Portfolio", // Alternative Site title for SEO
   siteUrl: "https://alexander-the-blog.netlify.com", // Domain of your site. No trailing slash!
   siteLanguage: "en", // Language Tag on <html> element
-  siteLogo: "/logos/logo-1024.png", // Used for SEO and manifest
+  siteLogo: "/logos/favicon-32x32.png", // Used for SEO and manifest
   siteDescription:
     "Dark One-Page portfolio with cards & detailed project views",
 
@@ -26,16 +26,16 @@ module.exports = {
 
   // Your information
   avatar: "/logos/headshot-min.jpg",
-  name: "LekoArts",
-  location: "Germany",
+  name: "Alex McEvoy",
+  location: "Seattle, WA",
   socialMedia: [
     {
-      url: "https://www.facebook.com/lekoarts.de",
-      name: "Facebook"
+      url: "https://github.com/TangledTessellations",
+      name: "GitHub"
     },
     {
-      url: "https://www.instagram.com/lekoarts.de",
-      name: "Instagram"
+      url: "https://www.linkedin.com/in/alex-mcevoy/",
+      name: "LinkedIn"
     }
   ]
 };

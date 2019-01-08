@@ -24,6 +24,7 @@ module.exports = {
         path: `${__dirname}/content/projects`
       }
     },
+
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -78,7 +79,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "standalone",
-        icon: "src/favicon-32x32.png"
+        icon: "src/favicon.png"
       }
     },
     "gatsby-plugin-offline",

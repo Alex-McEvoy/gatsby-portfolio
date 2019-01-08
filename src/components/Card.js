@@ -1,12 +1,13 @@
-import React from 'react';
-import styled from 'react-emotion';
-import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
-import { Link } from 'gatsby';
-import Overdrive from 'react-overdrive';
+import React from "react";
+import styled from "react-emotion";
+import PropTypes from "prop-types";
+import Img from "gatsby-image";
+import { Link } from "gatsby";
+import Overdrive from "react-overdrive";
 
 const CardItem = styled(Link)`
-  min-height: 500px;
+  margin: 10%;
+  min-height: 400px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
@@ -17,7 +18,7 @@ const CardItem = styled(Link)`
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 102%;
@@ -99,7 +100,7 @@ const AreaItem = styled.span`
   &:not(:last-child) {
     margin-right: 0.25rem;
     &:after {
-      content: ',';
+      content: ",";
     }
   }
 `;
@@ -140,5 +141,5 @@ Card.propTypes = {
   date: PropTypes.string.isRequired,
   areas: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired
 };

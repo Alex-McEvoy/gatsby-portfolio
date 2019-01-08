@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'react-emotion';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import styled from "react-emotion";
 
-import { Card, Header, Layout } from 'components';
-import config from '../../config/site';
+import { Card, Header, Layout } from "components";
+import config from "../../config/site";
 
 const Grid = styled.div`
   display: grid;
@@ -30,11 +30,16 @@ const Content = styled.div`
 
 const Index = ({
   data: {
-    allMarkdownRemark: { edges },
-  },
+    allMarkdownRemark: { edges }
+  }
 }) => (
   <Layout>
-    <Header avatar={config.avatar} name={config.name} location={config.location} socialMedia={config.socialMedia} />
+    <Header
+      avatar={config.avatar}
+      name={config.name}
+      location={config.location}
+      socialMedia={config.socialMedia}
+    />
     <Content>
       <Grid>
         {edges.map(project => (
@@ -58,9 +63,9 @@ export default Index;
 Index.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
-    }),
-  }).isRequired,
+      edges: PropTypes.array.isRequired
+    })
+  }).isRequired
 };
 
 export const pageQuery = graphql`
@@ -74,7 +79,11 @@ export const pageQuery = graphql`
           frontmatter {
             cover {
               childImageSharp {
-                fluid(maxWidth: 850, quality: 90, traceSVG: { color: "#328bff" }) {
+                fluid(
+                  maxWidth: 850
+                  quality: 90
+                  traceSVG: { color: "#328bff" }
+                ) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }

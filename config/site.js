@@ -5,7 +5,7 @@ module.exports = {
   siteTitleAlt: "Alex McEvoy - Portfolio", // Alternative Site title for SEO
   siteUrl: "https://alexander-the-blog.netlify.com", // Domain of your site. No trailing slash!
   siteLanguage: "en", // Language Tag on <html> element
-  siteLogo: "/logos/favicon-32x32.png", // Used for SEO and manifest
+  siteLogo: "/logos/logo-1024.png", // Used for SEO and manifest
   siteDescription:
     "Dark One-Page portfolio with cards & detailed project views",
 
